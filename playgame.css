@@ -1,0 +1,34 @@
+    body {
+    background-image: url(objects/wardrobe.jpg);
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+}
+
+.boy {
+    background-size: 100% 100%;
+    background-color: red;
+    padding: 5px;
+    margin-left: 525px;
+    margin-top: 10px;
+    margin-right: 80px;
+    height: 170px;
+    width: 170px;
+    border: 2px solid rgb(163, 3, 3);
+}
+
+.girl {
+    background-size: 100% 100%;
+    background-color: rgb(255, 0, 255);
+    height: 180px;
+    width: 180px;
+    -webkit-transform: scaleX(-1);
+    transform: skewX(-1);
+    border: 2px solid rgb(163, 8, 89);
+}
+
+.gender {
+    font-size: 58px;
+    font-family: fantasy;
+    margin-left: 567px;
+    margin-top: 300px;
+}

@@ -1,0 +1,238 @@
+body {
+    background-image: url(objects/insidespaceship.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.scorebord {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+        --borderWidth: 3px;
+        
+        position: relative;
+        border-radius: var(--borderWidth);
+        margin-top: 30px;    
+}
+
+.logo {
+    height: 134px;
+    width: 640px;
+}
+
+.scorebordName {
+    padding-top: 4px;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 130px;
+    width: 140px;
+    background: rgb(255, 0, 255);
+    border-right: 2px solid black;
+    margin-right: 70px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-transform: scaleX(-1);
+    transform: skewX(-1);
+}
+
+.scorebordScore {
+    background-color: rgb(255, 0, 255);
+    font-weight: bold;
+    padding-top: 34px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    font-size: 57px;
+    font-family: copse;
+    }
+
+.scorebordRobot {
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    height: 120px;
+    width: 140px;
+    background: rgb(8, 167, 246);
+    border-right: 2px solid black;
+    margin-left: 50px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+}
+
+.scorebordRobotScore {
+    background: rgb(8, 167, 246);
+    font-weight: bold;
+    padding-top: 34px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 57px;
+    font-family: copse;
+    
+}
+
+.rock {
+    margin-left: 575px;
+}
+
+.choices {
+    margin-top: 22px;
+}
+
+button#backbutton {
+    background-image: url(objects/backarrow.png);
+    background-size: cover;
+    height: 50px;
+    width: 25px;
+}
+button#rock {
+    border: 3px, solid, black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url(objects/rock.jpg);
+    background-size: 100% 100%;
+    font-weight: bold;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+button#paper {
+        border: 3px, solid, black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-image: url(objects/paper.jpg);
+        background-size: 100% 100%;
+        font-weight: bold;
+        width: 110px;
+        height: 110px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+}
+
+button#scissors {
+    border: 3px, solid, black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url(objects/scissors.jpg);
+    background-size: 100% 100%;
+    font-weight: bold;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.crownRobot {
+   height: 150px;
+   width: auto;
+   margin-right: 700px;
+   margin-bottom: 50px;
+   margin-left: 377px;
+   position: absolute;
+   visibility: hidden;
+}
+
+.robot {
+    width: 200px;
+    height: 360px;
+    margin-top: 100px;
+    -webkit-transform: scaleX(-1);
+    transform: skewX(-1);
+    margin-left: 365px;
+    margin-bottom: 10px;
+}
+
+.rockMoveAI {
+    height: 65px;
+    width: 75px;
+    position: absolute;
+    margin-top: 230px;  
+    margin-left: 35px; 
+    visibility: hidden; 
+}
+
+.paperMoveAI {
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 40px;
+    visibility: hidden;
+}
+
+.scissorsMoveAI {
+    height: 65px;
+    width: 65px;
+    margin-top: 230px;
+    margin-left: 40px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.rockMoveUser {
+    height: 65px;
+    width: 75px;
+    -webkit-transform: scaleX(-1);
+    transform: skewX(-1);
+    margin-left: 270px;
+    margin-top: 230px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.paperMoveUser {
+    height: 65px;
+    width: 65px;;
+    -webkit-transform: scaleX(-1);
+    transform: skewX(-1);
+    position: absolute;
+    margin-left: 274px;
+    margin-top: 230px;
+    visibility: hidden;
+}
+
+.scissorsMoveUser {
+    height: 65px;
+    width: 65px;
+    -webkit-transform: scaleX(-1);
+    transform: skewX(-1);
+    position: absolute;
+    margin-left: 274px;
+    margin-top: 230px;
+    visibility: hidden;
+}
+
+.crownUser {
+    height: 150px;
+    width: auto;
+    margin-right: 660px;
+    margin-bottom: 20px;
+    margin-left: 405px;
+    margin-top: 20px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.girl {
+    width: 340px;
+    height: 360px;
+    margin-left: 315px;
+    margin-bottom: 15px;
+}
+
+.backArrow {
+    height: 60px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 5px;
+    -webkit-transform: scaleX(-1);
+    transform: skewX(-1);
+    position: absolute;
+}
