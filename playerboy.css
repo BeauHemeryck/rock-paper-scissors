@@ -1,181 +1,171 @@
 body {
-    background-image: url(objects/insidespaceship.png);
+    background-image: url("objects/insidespaceship.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100vh;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-.scorebord {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-        --borderWidth: 3px;
-        
-        position: relative;
-        border-radius: var(--borderWidth);
-        margin-top: 30px;    
+#scorebord {
+    display: flex;
+    border-radius: 3px;
+    height: 18vh;
+    width: 90vw;
+    max-width: 85rem;
+    margin: 0 auto;
+    margin-top: 1.6rem;
+    justify-content: center;
 }
 
 .logo {
-    height: 134px;
-    width: 640px;
+    height: 100%;
+    width: 40%;
 }
 
 .scorebordName {
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 10px;
-    height: 120px;
-    width: 140px;
     background: rgb(255, 0, 0);
+    height: 100%;
+    width: 17vw;
     border-left: 2px solid black;
-    margin-right: 70px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }
 
 .scorebordScore {
-    background: rgb(255, 0, 0); 
+    background: rgb(255, 0, 0);
     font-weight: bold;
-    padding-top: 34px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 5px;
-    text-align: center;
-    font-size: 57px;
-    font-family: copse;
+    font-size: 3.8rem;
+    font-family: "Copse", serif;
+    height: 100%;
+    align-content: center;
+    padding: 0 4vw;
 }
 
 .scorebordRobot {
-    padding-top: 5px;
-    padding-left: 7px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    height: 120px;
-    width: 140px;
     background: rgb(8, 167, 246);
+    height: 100%;
+    width: 17vw;
     border-right: 2px solid black;
-    margin-left: 50px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-
 }
 
 .scorebordRobotScore {
     background: rgb(8, 167, 246);
     font-weight: bold;
-    padding-top: 34px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 5px;
-    text-align: center;
-    font-size: 57px;
-    font-family: copse;
-    
-}
-
-.rock {
-    margin-left: 563px;
-}
-
-.choices {
-    margin-top: 22px;
+    font-size: 3.8rem;
+    font-family: "Copse", serif;
+    height: 100%;
+    align-content: center;
+    padding: 0 4vw;
 }
 
 .backArrow {
-    height: 60px;
-    width: 100px;
-    margin-left: 50px;
-    margin-top: 5px;
+    height: 4.5rem;
+    width: 6rem;
+    margin-left: 4rem;
+    margin-top: 0.3rem;
     -webkit-transform: scaleX(-1);
     transform: skewX(-1);
     position: absolute;
 }
 
 button#rock {
-    border: 3px, solid, black;
+    border: 2px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
     background-image: url(objects/rock.jpg);
     background-size: 100% 100%;
     font-weight: bold;
-    width: 110px;
-    height: 110px;
+    width:  9rem;
+    height:  9rem;
+    max-height: 15vh;
     margin-bottom: 5px;
     border-radius: 5px;
 }
 
 button#paper {
-        border: 3px, solid, black;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-image: url(objects/paper.jpg);
-        background-size: 100% 100%;
-        font-weight: bold;
-        width: 110px;
-        height: 110px;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-bottom: 5px;
-        border-radius: 5px;
+    border: 2px solid black;
+    background-image: url(objects/paper.jpg);
+    background-size: 100% 100%;
+    font-weight: bold;
+    width:  9rem;
+    height: 9rem;
+    max-height: 15vh;
+    margin: 0 1rem;
+    border-radius: 5px;
 }
 
 button#scissors {
-    border: 3px, solid, black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border: 2px solid black;
     background-image: url(objects/scissors.jpg);
     background-size: 100% 100%;
     font-weight: bold;
-    width: 110px;
-    height: 110px;
+    width:  9rem;
+    height:  9rem;
+    max-height: 15vh;
     margin-bottom: 5px;
     border-radius: 5px;
 }
 
-.crownRobot {
-   height: 150px;
-   width: auto;
-   margin-right: 700px;
-   margin-bottom: 50px;
-   margin-left: 377px;
-   position: absolute;
-   visibility: hidden;
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .robot {
-    width: 200px;
-    height: 360px;
-    margin-top: 100px;
+    width: 13rem;
+    height: 24rem;
     -webkit-transform: scaleX(-1);
     transform: skewX(-1);
-    margin-left: 365px;
-    margin-bottom: 10px;
 }
+
+.boy {
+    width: 200px;
+    height: 350px;
+}
+
+#playerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+
+
+
+.crownRobot {
+    height: 150px;
+    width: auto;
+    position: absolute;
+    visibility: hidden;
+}
+
 
 .rockMoveAI {
     height: 65px;
     width: 75px;
     position: absolute;
-    margin-top: 230px;  
-    margin-left: 35px; 
-    visibility: hidden; 
+    visibility: hidden;
 }
 
 .paperMoveAI {
     height: 65px;
     width: 65px;
     position: absolute;
-    margin-top: 230px;
-    margin-left: 40px;
     visibility: hidden;
 }
 
 .scissorsMoveAI {
     height: 65px;
     width: 65px;
-    margin-top: 230px;
-    margin-left: 40px;
     position: absolute;
     visibility: hidden;
 }
@@ -185,20 +175,16 @@ button#scissors {
     width: 75px;
     -webkit-transform: scaleX(-1);
     transform: skewX(-1);
-    margin-left: 270px;
-    margin-top: 230px;
     position: absolute;
     visibility: hidden;
 }
 
 .paperMoveUser {
     height: 65px;
-    width: 65px;;
+    width: 65px;
     -webkit-transform: scaleX(-1);
     transform: skewX(-1);
     position: absolute;
-    margin-left: 274px;
-    margin-top: 230px;
     visibility: hidden;
 }
 
@@ -208,24 +194,13 @@ button#scissors {
     -webkit-transform: scaleX(-1);
     transform: skewX(-1);
     position: absolute;
-    margin-left: 274px;
-    margin-top: 230px;
     visibility: hidden;
 }
 
 .crownUser {
     height: 150px;
     width: auto;
-    margin-right: 700px;
-    margin-bottom: 40px;
-    margin-left: 400px;
     position: absolute;
     visibility: hidden;
 }
 
-.boy {
-    width: 200px;
-    height: 350px;
-    margin-left: 377px;
-    margin-bottom: 25px;
-}

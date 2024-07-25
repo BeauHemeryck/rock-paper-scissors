@@ -1,34 +1,51 @@
-    body {
+html {
+    height: 100vw;
+}
+body {
     background-image: url(objects/wardrobe.jpg);
-    background-size: 100% 140%;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
+    min-height: 150rem;
 }
 
 .boy {
     background-size: 100% 100%;
     background-color: red;
-    padding: 5px;
-    margin-left: 525px;
-    margin-top: 10px;
-    margin-right: 80px;
-    height: 170px;
-    width: 170px;
+    height: 20vh;
+    width: 11vw;
     border: 2px solid rgb(163, 3, 3);
+    margin-right: 1.5vw;
+    min-height: 7rem;
+    min-width: 7rem;
 }
 
 .girl {
     background-size: 100% 100%;
     background-color: rgb(255, 0, 255);
-    height: 180px;
-    width: 180px;
+    height: 20vh;
+    width: 11vw;
     -webkit-transform: scaleX(-1);
     transform: skewX(-1);
     border: 2px solid rgb(163, 8, 89);
+    min-height: 7rem;
+    min-width: 7rem;
 }
 
 .gender {
-    font-size: 58px;
+    font-size: 3.3rem;
     font-family: fantasy;
-    margin-left: 567px;
-    margin-top: 300px;
+    margin: 40vh 36vw 0%;
+}
+
+#genderContainer {
+    margin: 0% calc(50% - 13.5vw) 20vh;
+    height: 27vh;
+    width: 27vw;
+    min-width: 25rem;
+    position: fixed;
+}
+
+#container {
+    min-height: 60rem;
+    min-width: 80rem;
 }
